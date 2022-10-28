@@ -9,7 +9,3 @@ button.addEventListener("click", () => {
     search.classList.remove("active");
   }
 });
-
-document.querySelector("body").addEventListener("click", () => {
-  console.log("clicked the body");
-});
