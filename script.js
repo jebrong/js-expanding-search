@@ -3,5 +3,13 @@ const button = document.querySelector(".search__btn");
 const search = document.querySelector(".search");
 
 button.addEventListener("click", () => {
-  search.classList.add("active");
+  if (!search.className.includes("active")) {
+    search.classList.add("active");
+  } else {
+    search.classList.remove("active");
+  }
+});
+
+document.querySelector("body").addEventListener("click", () => {
+  console.log("clicked the body");
 });
